@@ -1,0 +1,71 @@
+:root {
+    --pink: rgb(255, 0, 72);
+    --dark-grey: rgb(161, 159, 170);
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: var(--dark-grey);
+    color: black;
+    margin: 0;
+    width: 100vw;
+}
+
+a, a:visited {
+    color: var(--pink);
+}
+
+img {
+    width: 100%;
+}
+
+
+.site-container {
+    padding: 0 0.5rem;
+}
+
+.header {
+    padding: 0.5rem 0;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100vw - 1rem);
+    padding: 0.5rem 0;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__left {
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 0.5rem;
+}
+
+.figure {
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px var(--pink) solid;
+}
+
+.cover {
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: calc(100vw - 2rem);
+}
